@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        height: 200vh;
+    }
+    .banner{
+        width: 100%;
+        height: 100vh;
+        background-image: url(https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1yUH8v.img?w=614&h=409&m=6&x=216&y=116&s=64&d=64);
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .banner__tittle{
+       --bs-bg-opacity: .2;
+    }
+</style>
+<body>
+    <header>
+        <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Offcanvas navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="banner d-flex flex-column justify-content-center">
+                <div class="banner__tittle bg-body-secondary text-center py-5">
+                    <h2>Tittle</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="py-5">
+            <h2 class="text-center fw-bold pb-1">Nossos serviços</h2>
+    
+            <div class="container d-flex justify-content-around flex-wrap">
+    
+              <div class="card m-4" style="width: 20rem;">
+                <img src="./assets/cafe-card.png" class="card-img-top"
+                  alt="Balcão de padaria tradicional com alimentos diversos">
+                <div class="card-body">
+                  <h5 class="card-title py-2 fw-bold">Café & Bistrô</h5>
+                  <p class="card-text">Nosso bistrô oferece uma ampla variedade de cafés, smoothies, deliciosos
+                    salgados e sobremesas. Uma excelente opção para quem busca um lugar tranquilo e
+                    aconchegante.</p>
+                  <a href="#" class="btn botao-padrao w-100 fw-bold" data-bs-toggle="offcanvas" data-bs-target="#canvas-1" aria-controls="offcanvasRight">Quero detalhes</a>
+                </div>
+              </div>
+    
+              <div class="card m-4" style="width: 20rem;">
+                <img src="./assets/buffet-card.png" class="card-img-top" alt="Mesa de buffet com alimentos diversos">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Buffet</h5>
+                  <p class="card-text">Buffet e catering personalizado para eventos, produções e celebrações. Com
+                    um menu variado e adaptável às preferências do cliente, atendimento atencioso e
+                    profissional.</p>
+                  <a href="#" class="btn botao-padrao w-100 fw-bold mt-3">Quero detalhes</a>
+                </div>
+              </div>
+    
+              <div class="card m-4" style="width: 20rem;">
+                <img src="./assets/delivery-card.png" class="card-img-top" alt="Caixa aberta armazenando comidas diversas">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Delivery</h5>
+                  <p class="card-text">Para quem deseja desfrutar no conforto de casa, oferecemos delivery dos
+                    produtos. Com o mesmo cardápio variado de sempre, sem perder nosso sabor e padrão de
+                    qualidade.</p>
+                  <a href="#" class="btn botao-padrao w-100 fw-bold mt-3">Quero detalhes</a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div class="banner d-flex flex-column justify-content-center">
+                <div class="banner__tittle bg-body-secondary text-center py-5">
+                    <h2>Tittle</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- canvas 1 -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="canvas-1" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Accordion Item #1
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Accordion Item #2
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Accordion Item #3
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
